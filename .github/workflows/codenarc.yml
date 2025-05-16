@@ -28,5 +28,6 @@ jobs:
         run: |
           java -jar CodeNarc.jar \
             -basedir=src \
-            -rulesetfiles=rulesets/basic.xml,rulesets/braces.xml,rulesets/naming.xml,rulesets/unnecessary.xml,rulesets/security.xml \
+            -rulesetfiles=rulesets/basic.xml,rulesets/braces.xml,rulesets/naming.xml,rulesets/unnecessary.xml,rulesets/security.xml,rulesets/braces.xml,\rulesets/concurrency.xml,\rulesets/convention.xml,\rulesets/design.xml,\rulesets/dry.xml,\rulesets/enhanced.xml,\rulesets/exceptions.xml,\rulesets/formatting.xml,\rulesets/generic.xml,\rulesets/grails.xml,\rulesets/groovyism.xml,\rulesets/imports.xml,\rulesets/jdbc.xml,\rulesets/junit.xml,\rulesets/logging.xml,\rulesets/naming.xml,\rulesets/security.xml,\rulesets/serialization.xml,\rulesets/size.xml,\rulesets/unnecessary.xml,\rulesets/unused.xml \
             -report=console \
+
