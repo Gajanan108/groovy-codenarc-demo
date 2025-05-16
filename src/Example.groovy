@@ -5,5 +5,4 @@ class Example {
     }
 }
 
-// triggering scan updated yml
-   
+// triggering scan updated 
