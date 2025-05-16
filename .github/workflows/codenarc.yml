@@ -22,7 +22,7 @@ jobs:
 
       - name: Download CodeNarc
         run: |
-          curl -L -o CodeNarc.jar https://repo1.maven.org/maven2/org/codenarc/CodeNarc/3.3.0/CodeNarc-3.3.0-all.jar
+          curl -L -o CodeNarc.jar https://repo1.maven.org/maven2/org/codenarc/CodeNarc/3.6.0/CodeNarc-3.6.0-all.jar
 
       - name: Run CodeNarc
         run: |
