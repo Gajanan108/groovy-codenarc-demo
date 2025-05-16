@@ -28,5 +28,5 @@ jobs:
         run: |
           java -jar CodeNarc.jar \
             -basedir=src \
-            -rulesetfiles=rulesets/basic.xml \
-            -report=console
+            -rulesetfiles=rulesets/basic.xml,rulesets/braces.xml,rulesets/naming.xml,rulesets/unnecessary.xml,rulesets/security.xml \
+            -report=console \
