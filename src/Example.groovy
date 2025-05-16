@@ -4,3 +4,5 @@ class Example {
         def unused = 123
     }
 }
+
+// triggering scan
