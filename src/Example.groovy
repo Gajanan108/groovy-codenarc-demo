@@ -61,5 +61,20 @@ class Example {
 
 }
 
+class Sample {
+    def Password = "123456" // Violates naming convention and hardcoded password
+    def calculate() {
+        println "Calculating..." // Use of println
+        def unusedVar = 42 // Unused variable
+        if (true) {
+            if (true) {
+                if (true) {
+                    println "Deeply nested if statements" // Deep nesting
+                }
+            }
+        }
+    }
+}
+
 
 
