@@ -89,3 +89,39 @@ class Sample {
         }
     }
 }
+
+import java.util.Random
+import java.io.File
+
+class Example extends java.rmi.server.UnicastRemoteObject {  // NonFinalSubclassOfSensitiveInterface
+
+    public static String publicField = "test"  // NonFinalPublicField
+
+    public Example() throws java.rmi.RemoteException {}
+
+    def useInsecureRandom() {
+        def r = new Random() // InsecureRandom
+        println r.nextInt()
+    }
+
+    def createTempFile() {
+        File.createTempFile("test", ".txt")  // FileCreateTempFile
+    }
+
+    def runExit() {
+        System.exit(1)  // SystemExit
+    }
+
+    protected void finalize() throws Throwable {  // PublicFinalizeMethod + ObjectFinalize
+        println("Finalizing...")
+    }
+
+    def arrayFunc() {
+        def arr = [1, 2, 3]
+        int[] nums = [1, 2, 3]  // UnsafeArrayDeclaration
+    }
+
+    def useJavaIO() {
+        def f = new java.io.File("somefile.txt") // JavaIoPackageAccess
+    }
+}
