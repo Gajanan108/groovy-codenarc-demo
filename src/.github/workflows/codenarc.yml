@@ -29,3 +29,4 @@ jobs:
             -basedir=src \
             -rulesetfiles=rulesets/basic.xml \
             -report=console
+
