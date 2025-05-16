@@ -1,4 +1,18 @@
 class Example {
+    def password = "plaintext123"  // should trigger HardCodedPassword
+
+    def runQuery(String userInput) {
+        def sql = "SELECT * FROM users WHERE name = '$userInput'" // should trigger SqlInjection
+        println sql
+    }
+
+    def useMD5() {
+        def digest = java.security.MessageDigest.getInstance("MD5") // should trigger UseOfInsecureCryptographicAlgorithm
+    }
+}
+
+
+class Example {
     def badMethod() {
         println "Hello, world"
         def unused = 123
