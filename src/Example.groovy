@@ -5,4 +5,4 @@ class Example {
     }
 }
 
-// triggering scan updated 
+// triggering scan updated
