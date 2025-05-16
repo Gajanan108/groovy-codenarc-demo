@@ -125,3 +125,4 @@ class Example extends java.rmi.server.UnicastRemoteObject {  // NonFinalSubclass
         def f = new java.io.File("somefile.txt") // JavaIoPackageAccess
     }
 }
+
