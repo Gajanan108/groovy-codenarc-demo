@@ -6,3 +6,4 @@ class Example {
 }
 
 // triggering scan updated yml
+   
