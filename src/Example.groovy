@@ -126,3 +126,5 @@ class Example extends java.rmi.server.UnicastRemoteObject {  // NonFinalSubclass
     }
 }
 
+
+//simple
